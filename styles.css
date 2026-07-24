@@ -1,30 +1,30 @@
-/* General page styles */
-
+/* Use consistent sizing for all elements */
 * {
     box-sizing: border-box;
 }
 
+/* General page styling */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
     color: #222;
-    animation: fadeIn 1s ease-in;
+    background-color: #f2f2f2;
 }
 
+/* Header */
 header {
-    padding: 25px;
+    padding: 30px 20px;
+    color: white;
     text-align: center;
     background-color: #333;
-    color: white;
+    animation: fadeIn 1s ease-in;
 }
 
 header h1 {
     margin-top: 0;
 }
 
-/* Navigation styles */
-
+/* Navigation */
 nav ul {
     display: flex;
     justify-content: center;
@@ -39,8 +39,8 @@ nav a {
     padding: 12px 20px;
     color: white;
     background-color: #555;
-    text-decoration: none;
     border-radius: 4px;
+    text-decoration: none;
     transition: background-color 0.3s ease;
 }
 
@@ -48,38 +48,39 @@ nav a:hover {
     background-color: #777;
 }
 
-/* Main page layout */
-
+/* Centered page content */
 main {
     width: 90%;
     max-width: 1100px;
     margin: 30px auto;
 }
 
+/* Blog article layout */
 .blog-container {
     display: flex;
-    justify-content: center;
     gap: 25px;
-}
-
-article,
-.contact-section {
-    padding: 20px;
-    background-color: white;
-    border-radius: 6px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 article {
     flex: 1;
+    padding: 20px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in;
 }
 
+/* Contact section */
 .contact-section {
     margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in;
 }
 
-/* Contact form styles */
-
+/* Flexbox contact form */
 form {
     display: flex;
     flex-direction: column;
@@ -101,46 +102,49 @@ input,
 textarea {
     width: 100%;
     padding: 10px;
+    font: inherit;
     border: 1px solid #aaa;
     border-radius: 4px;
-    font: inherit;
-    transition: border-color 0.3s ease, background-color 0.3s ease;
+    transition:
+        border-color 0.3s ease,
+        background-color 0.3s ease;
 }
 
 input:hover,
-textarea:hover,
+textarea:hover {
+    border-color: #555;
+    background-color: #fafafa;
+}
+
 input:focus,
 textarea:focus {
     border-color: #333;
-    background-color: #f7f7f7;
+    background-color: #f2f2f2;
     outline: none;
 }
 
 button {
     padding: 12px 20px;
+    color: white;
+    background-color: #333;
     border: none;
     border-radius: 4px;
-    background-color: #333;
-    color: white;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 button:hover {
     background-color: #555;
 }
 
-/* Footer styles */
-
+/* Footer */
 footer {
     padding: 20px;
+    color: white;
     text-align: center;
     background-color: #333;
-    color: white;
 }
 
-/* Fade-in animation */
-
+/* Required fade-in animation */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -151,16 +155,10 @@ footer {
     }
 }
 
-/* Phone layout */
-
+/* Phones */
 @media screen and (max-width: 767px) {
     nav ul {
         flex-direction: column;
-        align-items: center;
-    }
-
-    nav li {
-        width: 100%;
     }
 
     nav a {
@@ -176,11 +174,10 @@ footer {
     }
 }
 
-/* Tablet layout */
-
+/* Tablets */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .blog-container {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     main {
@@ -188,8 +185,7 @@ footer {
     }
 }
 
-/* Desktop layout */
-
+/* Desktops */
 @media screen and (min-width: 1025px) {
     .blog-container {
         flex-direction: row;
