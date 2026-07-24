@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steven's Tech Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header id="home">
+        <h1>Steven's Tech Blog</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="blog" class="blog-container">
+            <article>
+                <h2>Learning HTML5</h2>
+
+                <p>
+                    HTML5 provides the basic structure for modern webpages. Semantic
+                    elements such as header, nav, main, article, section, and footer
+                    make webpage content easier to organize and understand.
+                </p>
+
+                <p>
+                    Using semantic elements also improves accessibility and helps
+                    search engines better understand the purpose of each part of a
+                    webpage.
+                </p>
+            </article>
+
+            <article>
+                <h2>Improving Websites with CSS</h2>
+
+                <p>
+                    CSS controls the appearance and layout of a webpage. It can be
+                    used to change colors, spacing, fonts, borders, and the position
+                    of webpage elements.
+                </p>
+
+                <p>
+                    Flexbox and media queries make it possible to create responsive
+                    layouts that adjust to phones, tablets, and desktop computers.
+                </p>
+            </article>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact</h2>
+
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>stemue8520 &copy; 2026</p>
+    </footer>
+</body>
+
+</html>
