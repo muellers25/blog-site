@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Steven's Tech Blog</title>
+
+    <title>Steven's Technology Blog</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header id="home">
-        <h1>Steven's Tech Blog</h1>
+        <h1>Steven's Technology Blog</h1>
 
         <nav>
             <ul>
@@ -27,30 +28,30 @@
                 <h2>Learning HTML5</h2>
 
                 <p>
-                    HTML5 provides the basic structure for modern webpages. Semantic
-                    elements such as header, nav, main, article, section, and footer
-                    make webpage content easier to organize and understand.
+                    HTML5 provides the structure used to create modern webpages.
+                    Semantic elements such as header, nav, main, article, section,
+                    and footer help organize webpage content.
                 </p>
 
                 <p>
-                    Using semantic elements also improves accessibility and helps
-                    search engines better understand the purpose of each part of a
-                    webpage.
+                    Semantic HTML also improves accessibility and helps browsers
+                    and search engines understand the purpose of webpage content.
                 </p>
             </article>
 
             <article>
-                <h2>Improving Websites with CSS</h2>
+                <h2>Creating Responsive Websites with CSS</h2>
 
                 <p>
-                    CSS controls the appearance and layout of a webpage. It can be
-                    used to change colors, spacing, fonts, borders, and the position
-                    of webpage elements.
+                    CSS controls the appearance and layout of a webpage. It can
+                    change colors, fonts, spacing, borders, and the placement of
+                    elements on the page.
                 </p>
 
                 <p>
-                    Flexbox and media queries make it possible to create responsive
-                    layouts that adjust to phones, tablets, and desktop computers.
+                    Flexbox and media queries allow webpages to adapt to phones,
+                    tablets, and desktop computers while maintaining a clean and
+                    readable design.
                 </p>
             </article>
         </section>
@@ -58,25 +59,46 @@
         <section id="contact" class="contact-section">
             <h2>Contact</h2>
 
+            <p>Use the form below to send a message.</p>
+
             <form action="#" method="post">
                 <div class="form-group">
                     <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                    >
                 </div>
 
                 <div class="form-group">
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    >
                 </div>
 
                 <div class="form-group">
                     <label for="subject">Subject:</label>
-                    <input type="text" id="subject" name="subject">
+                    <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                    >
                 </div>
 
                 <div class="form-group">
                     <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="6" required></textarea>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        required
+                    ></textarea>
                 </div>
 
                 <button type="submit">Submit</button>
